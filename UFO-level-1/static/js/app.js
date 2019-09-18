@@ -51,7 +51,8 @@ button.on("click", function () {
     }
     console.log(tableData);
 
-    d3.select("tbody").selectAll("tr").remove()
+    //d3.select("tbody").selectAll("tr").remove()
+    tbody.html("")
 
     tableData.forEach((filterSighting) => {
         var row = tbody.append("tr");
